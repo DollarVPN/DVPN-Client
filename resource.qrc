@@ -304,5 +304,11 @@
         <file>img/unchecking (2).png</file>
         <file>img/check (3).png</file>
         <file>img/uncheck.png</file>
+        <file>img/combo3.PNG</file>
+        <file>img/settings.png</file>
+        <file>img/connection.png</file>
+        <file>img/x.PNG</file>
+        <file>img/ques.PNG</file>
+        <file>img/software.PNG</file>
     </qresource>
 </RCC>

@@ -3,7 +3,8 @@
 
 
 
-#include "common.h"
+
+#include "settingpage.h"
 #include "wndmanager.h"
 
 
@@ -24,16 +25,6 @@ ConnectPage::ConnectPage(QWidget *parent) :
     ui->setupUi(this);
     setFixedSize(this->size());
     setWindowTitle(qApp->applicationName());
-    QPixmap logopixmap(":/resources/img/logo1.png");
-    this->ui->Logolabel->setPixmap(logopixmap);
-    QPixmap connpixmap(":/resources/img/conn2.PNG");
-    this->ui->connlabel->setPixmap(connpixmap);
-    QPixmap portpixmap(":/resources/img/port1.PNG");
-    this->ui->portlabel->setPixmap(portpixmap);
-    QPixmap dashpixmap(":/resources/img/dash1.PNG");
-    this->ui->dashlabel->setPixmap(dashpixmap);
-    QPixmap facepixmap(":/resources/img/usermain.PNG");
-    this->ui->facelabel->setPixmap(facepixmap);
     init();
     QFontDatabase fontDB;
     fontDB.addApplicationFont(":/resources/img/fonts/SourceSansPro-Regular.ttf");
@@ -78,11 +69,6 @@ void ConnectPage::init()
 
 
     ui->listWidget->setItemWidget(listWidgetItem,server);
-    ui->listWidget->setItemWidget(listWidgetItem,server);
-    ui->listWidget->setItemWidget(listWidgetItem,server);
-    ui->listWidget->setItemWidget(listWidgetItem,server);
-
-
 
 
 }
@@ -94,8 +80,8 @@ void ConnectPage::on_ToPort_clicked()
 
 void ConnectPage::on_pushButton_4_clicked()
 {
-//    WndManager::instance()->ToDash();
-   Server::instance()->show();
+    SettingPage::instance()->show();
+
 }
 
 void ConnectPage::on_pushButton_2_clicked()

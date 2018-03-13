@@ -43,8 +43,14 @@ background-color:#1c1d25;
       <height>31</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+image: url(:/resources/img/usermain.PNG);
+}</string>
+    </property>
     <property name="text">
-     <string>TextLabel</string>
+     <string/>
     </property>
    </widget>
    <widget class="QLabel" name="welclabel">
@@ -440,8 +446,14 @@ background-color:#1c1d25;
       <height>101</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+image: url(:/resources/img/logo1.png);
+}</string>
+    </property>
     <property name="text">
-     <string>TextLabel</string>
+     <string/>
     </property>
    </widget>
    <widget class="QLabel" name="connlabel">
@@ -452,6 +464,12 @@ background-color:#1c1d25;
       <width>41</width>
       <height>29</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+image: url(:/resources/img/conn2.PNG);
+}</string>
     </property>
     <property name="text">
      <string/>
@@ -466,6 +484,12 @@ background-color:#1c1d25;
       <height>29</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+image: url(:/resources/img/port1.PNG);
+}</string>
+    </property>
     <property name="text">
      <string/>
     </property>
@@ -478,6 +502,12 @@ background-color:#1c1d25;
       <width>41</width>
       <height>29</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+image: url(:/resources/img/dash1.PNG);
+}</string>
     </property>
     <property name="text">
      <string/>

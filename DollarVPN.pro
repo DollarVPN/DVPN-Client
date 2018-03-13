@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT       += core gui network xml
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -24,6 +24,7 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 win32:{
 RC_FILE=DollarVPN.rc
+LIBS += -lws2_32 -lIphlpapi
 }
 
 SOURCES += \
@@ -34,7 +35,19 @@ SOURCES += \
     dashboardpage.cpp \
     portforpage.cpp \
     wndmanager.cpp \
-    authmanage.cpp \
+    subsettings.cpp \
+    connectionsettings.cpp \
+    authmanager.cpp     \
+    openvpnmanager.cpp  \
+    osspecific.cpp      \
+    pathhelper.cpp      \
+    pingwaiter.cpp      \
+    portforwarder.cpp   \
+    trayiconmanager.cpp \
+    log.cpp \
+    settingpage.cpp     \
+    setting.cpp \
+    errordialog.cpp     \
     common.cpp
 
 
@@ -45,7 +58,19 @@ HEADERS += \
     dashboardpage.h \
     portforpage.h \
     wndmanager.h \
-    authmanage.h \
+    subsettings.h \
+    connectionsettings.h \
+    authmanager.h   \
+    openvpnmanager.h    \
+    osspecific.h      \
+    pathhelper.h      \
+    pingwaiter.h      \
+    portforwarder.h   \
+    trayiconmanager.h \
+    log.h \
+    settingpage.h     \
+    setting.h \
+    errordialog.h     \
     common.h
 
 FORMS += \
@@ -53,7 +78,11 @@ FORMS += \
         server.ui \
     connectpage.ui \
     dashboardpage.ui \
-    portforpage.ui
+    portforpage.ui \
+    subsettings.ui \
+    connectionsettings.ui \
+    settingpage.ui \
+    errordialog.ui
 
 
 RESOURCES += \

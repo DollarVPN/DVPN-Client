@@ -25,8 +25,13 @@ public:
     void trans(const QPoint & p, QWidget * to);
     void CloseAll();
     void ToFront(QWidget * w);
+    void ErrMsg(const QString & msg);
+    void ToPrimary();
+    void HideThis(QWidget * scr);
+    void SavePos();
+    QPoint CurrPos();
 
-
+    void ToFront();
 
 
 signals:

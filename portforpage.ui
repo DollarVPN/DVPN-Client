@@ -43,8 +43,14 @@ background-color:#1c1d25;
       <height>101</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+image: url(:/resources/img/logo.png);
+}</string>
+    </property>
     <property name="text">
-     <string>TextLabel</string>
+     <string/>
     </property>
    </widget>
    <widget class="QLabel" name="connlabel">
@@ -55,6 +61,12 @@ background-color:#1c1d25;
       <width>41</width>
       <height>29</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+image: url(:/resources/img/conn1.PNG);
+}</string>
     </property>
     <property name="text">
      <string/>
@@ -69,6 +81,12 @@ background-color:#1c1d25;
       <height>29</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+image: url(:/resources/img/port2.PNG);
+}</string>
+    </property>
     <property name="text">
      <string/>
     </property>
@@ -81,6 +99,12 @@ background-color:#1c1d25;
       <width>41</width>
       <height>29</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+image: url(:/resources/img/dash1.PNG);
+}</string>
     </property>
     <property name="text">
      <string/>
@@ -194,8 +218,14 @@ background-color:#1c1d25;
       <height>31</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+image: url(:/resources/img/usermain.PNG);
+}</string>
+    </property>
     <property name="text">
-     <string>TextLabel</string>
+     <string/>
     </property>
    </widget>
    <widget class="QLabel" name="welclabel">
@@ -503,6 +533,12 @@ QComboBox::down-arrow
       <width>521</width>
       <height>31</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+
+}</string>
     </property>
     <property name="text">
      <string/>

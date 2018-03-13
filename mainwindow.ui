@@ -51,14 +51,14 @@ padding-bottom:5px;
 
 QPushButton:hover
 {
-   background-color:white;
+   background-color:#ffb400;
 }</string>
     </property>
     <property name="text">
      <string>LOGIN  TO  THE  SOFTWARE</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="username">
+   <widget class="QLineEdit" name="eLogin">
     <property name="geometry">
      <rect>
       <x>400</x>
@@ -192,7 +192,9 @@ padding-right:5px;
      <string notr="true">QLabel
 {
 background-color:#191a1f;
-background-image:
+
+image: url(:/resources/img/uncheck.png);
+
 
 }</string>
     </property>
@@ -208,6 +210,12 @@ background-image:
       <width>141</width>
       <height>171</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+image: url(:/resources/img/logo.png);
+}</string>
     </property>
     <property name="text">
      <string/>

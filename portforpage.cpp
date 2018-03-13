@@ -25,16 +25,7 @@ PortforPage::PortforPage(QWidget *parent) :
     setWindowTitle(qApp->applicationName());
 
 
-    QPixmap logopixmap(":/resources/img/logo1.png");
-    this->ui->Logolabel->setPixmap(logopixmap);
-    QPixmap portpixmap(":/resources/img/port2.PNG");
-    this->ui->portlabel->setPixmap(portpixmap);
-    QPixmap facepixmap(":/resources/img/usermain.PNG");
-    this->ui->facelabel->setPixmap(facepixmap);
-    QPixmap connpixmap(":/resources/img/conn1.PNG");
-    this->ui->connlabel->setPixmap(connpixmap);
-    QPixmap dashpixmap(":/resources/img/dash1.PNG");
-    this->ui->dashlabel->setPixmap(dashpixmap);
+
     QPixmap locpixmap(":/resources/img/locationtxt.PNG");
     this->ui->locationtxt->setPixmap(locpixmap);
     QPixmap porttxtpixmap(":/resources/img/porttxt.PNG");

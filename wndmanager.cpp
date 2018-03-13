@@ -2,10 +2,12 @@
 #include "mainwindow.h"
 #include "portforpage.h"
 #include "wndmanager.h"
-
-
+#include "errordialog.h"
+#include "authmanager.h"
 
 #include "connectpage.h"
+
+#include <QSettings>
 
 
 
@@ -188,3 +190,34 @@ void WndManager::ToFront(QWidget * w)
         w->activateWindow();
     }
 }
+
+void WndManager::HideThis(QWidget * scr)
+{
+    SaveAndHide(scr);
+}
+
+QPoint WndManager::CurrPos()
+{
+    return QPoint(_x, _y);
+}
+
+void WndManager::SavePos()
+{
+    QSettings settings;
+    settings.setValue("pos", this->CurrPos());
+}
+
+void WndManager::ErrMsg(const QString & msg)
+{
+
+    ErrorDialog dlg(msg,this->ScrVisible());
+    dlg.exec();
+}
+
+void WndManager::ToPrimary()
+{
+    if (AuthManager::instance()->loggedIn())
+        ToConn();
+
+}
+
